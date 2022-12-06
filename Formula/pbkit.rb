@@ -1,8 +1,8 @@
 class Pbkit < Formula
   desc "Protobuf toolings"
   homepage "https://github.com/pbkit/pbkit"
-  url "https://api.github.com/repos/pbkit/pbkit/tarball/v0.0.56"
-  sha256 "32997971f4080681cedfcea7471d164eac92ff7f66a0803ac610ace05e0aeed6"
+  url "https://api.github.com/repos/pbkit/pbkit/tarball/v0.0.57"
+  sha256 "c09430b8d18d8cc844ba15e82a7bffaad6049f21cdfb6932ed76ae0ad53558a7"
   license any_of: ["Apache-2.0", "MIT"]
   depends_on "deno"
   def install
