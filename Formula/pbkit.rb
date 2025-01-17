@@ -8,8 +8,8 @@ class Pbkit < Formula
   def install
     mkdir_p libexec
     system "mv ./* #{libexec}/"
-    system "deno", "install", "--root", libexec, "-n", "pb", "-A", "--no-check", "--unstable", libexec/"cli/pb/entrypoint.ts"
-    system "deno", "install", "--root", libexec, "-n", "pollapo", "-A", "--no-check", "--unstable", libexec/"cli/pollapo/entrypoint.ts"
+    system "deno", "install", "--global", "--root", libexec, "-n", "pb", "-A", "--no-check", "--unstable-kv", "--unstable-cron", libexec/"cli/pb/entrypoint.ts"
+    system "deno", "install", "--global", "--root", libexec, "-n", "pollapo", "-A", "--no-check", "--unstable-kv", "--unstable-cron", libexec/"cli/pollapo/entrypoint.ts"
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 end
